@@ -67,6 +67,8 @@ CCart::Update()
 
     if (CTimer::Get().IsTimerFinish(CartTimer))
     {
+        if (m_state == state::eStop)
+            return;
 
         if (m_left_inc != 0)
         {

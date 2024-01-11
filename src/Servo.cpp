@@ -72,6 +72,8 @@ CServo::Update()
         }
         else
         {
+            if (!m_pulsesLeft)
+                return;
 
             if (m_highPhase)
             {

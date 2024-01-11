@@ -11,6 +11,7 @@ typedef enum timers : uint8_t {
     ServoTimer,
     CartTimer,
     ScanTimer,
+    LedTimer,
     LargeTimer,
 
     //--------------

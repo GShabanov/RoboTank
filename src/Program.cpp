@@ -60,7 +60,7 @@ CProgram::Init()
     //
     // start lazy init in background
     //
-    CTimer::Get().SetCounter(LargeTimer, 20000);
+    CTimer::Get().SetCounter(LargeTimer, 2000);
 
     CTimer* pTimer = &CTimer::Get();
 
@@ -90,7 +90,6 @@ CProgram::Init()
     pinMode(light_R_Pin, INPUT);
 
     CServo::Get().setAngle(90); //set the angle of the servo to 90°
-    CServo::Get().waitForSet();
 #endif
 
     while (!CTimer::Get().IsTimerFinish(LargeTimer))
@@ -98,7 +97,12 @@ CProgram::Init()
         _NOP();
     }
 
-    CLedMatrix::Get().display(start01);  //show start
+    CLedMatrix::Get().displayBanner(&HelloBanner);  //show start
+    //CLedMatrix::Get().printString("Hello!!", -6);  //show start
+    CServo::Get().waitForSet();
+
+    //CLedMatrix::Get().display(start01);  //show start
+    //CLedMatrix::Get().displayChar(54);
 }
 
 bool
