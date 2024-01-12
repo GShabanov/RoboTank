@@ -3,7 +3,7 @@
 *       LedMatrix.cpp                                                                   *
 *                                                                                       *
 *   Abstract:                                                                           *
-*       aip1640 (TM1640 LED) Led display code                                                        *
+*       aip1640 (TM1640 LED) Led display code                                           *
 *                                                                                       *
 *   Author:                                                                             *
 *       G Shabanov  29-Dec-2023                                                         *

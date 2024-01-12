@@ -11,7 +11,7 @@ class CServo : public CDispatch, public Singleton<CServo>
 
     int     m_pulsesLeft;
     int     m_pulsewidth;
-    bool    m_highPhase;
+    bool    m_lowPhase;
     uint8_t m_tics;
 public:
     CServo() throw()

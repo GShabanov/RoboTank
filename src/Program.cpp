@@ -237,7 +237,7 @@ CProgram::Process(char &command)
         break;
 
     case 'c':
-        CServo::Get().setAngle(90);
+        CServo::Get().setAngle(93);
         CServo::Get().waitForSet();
         break;
 
